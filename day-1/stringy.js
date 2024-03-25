@@ -25,10 +25,15 @@ function length(string) {
  */
 function toLowerCase(string) {
     // YOUR CODE BELOW HERE //
-
-
-
-    // YOUR CODE ABOVE HERE //
+/*
+I: string
+O: NEW STRING (given string converted to lowercase)
+*/
+//force given string to lowercase
+  //create new string
+let lowerCaseString = string;
+return lowerCaseString.toLowerCase();
+  // YOUR CODE ABOVE HERE //
 }
 
 /**
@@ -36,9 +41,10 @@ function toLowerCase(string) {
  */
 function toUpperCase(string) {
     // YOUR CODE BELOW HERE //
-
-
-
+//create a new string version of string so that string cn be changed later
+let upperCaseString = string;
+//convert upperCaseString to an uppercase version of string and return it
+return upperCaseString.toUpperCase();
     // YOUR CODE ABOVE HERE //
 }
 
@@ -57,10 +63,17 @@ function toUpperCase(string) {
  */
 function toDashCase(string) {
     // YOUR CODE BELOW HERE //
-
-
-
-    // YOUR CODE ABOVE HERE //
+      //create new variable, dashedString, so that it can be modified and then returned
+       //convert string to dash-case
+      //force string to lowercase
+    let lowerCaseString = string.toLowerCase();
+    console.log(lowerCaseString);
+      //replace empty space with a dash
+      let dashCaseString = lowerCaseString.replace(" ", "-");
+      console.log(dasCaseString)
+        //return new string
+        return dashCaseString;
+ // YOUR CODE ABOVE HERE //
 }
 
 /**
