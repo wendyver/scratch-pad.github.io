@@ -6,7 +6,7 @@
  * IN CLASS EXERCISE: stringy.js
  */
 // hello
-////**
+/**
  * Given an input String, return its length.
  *
  * TIP: In JavaScript, how can we decipher the length of a String?
