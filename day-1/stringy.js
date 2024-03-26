@@ -151,9 +151,10 @@ return lowerCaseLastLetter === lowerCaseChar;
  */
 function concat(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-
-
-
+// Given two input Strings, return the Strings concatenated into one.
+  // use the + operator (plus sign)
+  let concatenatedStrings = stringOne + stringTwo;
+  return concatenatedStrings;
     // YOUR CODE ABOVE HERE //
 }
 
