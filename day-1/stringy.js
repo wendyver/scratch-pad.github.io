@@ -129,6 +129,16 @@ if (lowerFirstChar === lowerCaseChar) {
 function endsWith(string, char) {
     // YOUR CODE BELOW HERE //
 
+// get last letter of string
+let lastLetterOfString = string[string.length-1];
+// change last letter of string to lowercase
+let lowerCaseLastLetter = lastLetterOfString.toLowerCase();
+// change char to lowercase
+let lowerCaseChar = char.toLowerCase();
+// compare last letter of string and char (both lowwwercase)
+return lowerCaseLastLetter === lowerCaseChar;
+// if same, return true
+// If different, return false
 
 
     // YOUR CODE ABOVE HERE //
