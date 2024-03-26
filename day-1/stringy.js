@@ -67,11 +67,11 @@ function toDashCase(string) {
        //convert string to dash-case
       //force string to lowercase
     let lowerCaseString = string.toLowerCase();
-    console.log(lowerCaseString);
-      //replace empty space with a dash
-      let dashCaseString = lowerCaseString.replace(" ", "-");
-      console.log(dasCaseString)
-        //return new string
+     //create dashCaseString to hold a lowerCaseString that will be modified as follows:
+      // lowerCaseString is split at every space
+       // and then joined back together using dashes
+      let dashCaseString = lowerCaseString.split(" ").join("-");
+        //return new dashCaseString
         return dashCaseString;
  // YOUR CODE ABOVE HERE //
 }
@@ -90,8 +90,26 @@ function toDashCase(string) {
  */
 function beginsWith(string, char) {
     // YOUR CODE BELOW HERE //
-
-    
+/*
+I: a string and a character
+O: a boolean; true if the string starts with the char
+C: must be case insensitive
+E: when cases don't match
+*/
+//get the firstCharacter of the input strimg
+let firstCharacter = string[0];
+//convert that 1st char to lowercase
+let lowerFirstChar = firstCharacter.toLowerCase();
+//convert the input char to lowercase
+let lowerCaseChar = char.toLowerCase();
+//compare the lowerFirstChar of the string to the lowerCaseChar
+// if they're the same, return true
+//if they're not, return false
+if (lowerFirstChar === lowerCaseChar) {
+    return true;
+} else {
+    return false;
+}
 
     // YOUR CODE ABOVE HERE //
 }
