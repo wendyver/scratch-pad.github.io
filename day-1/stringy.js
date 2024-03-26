@@ -244,7 +244,7 @@ function sortDescending(stringOne, stringTwo) {
 // if s1 is lower in alphabetical order than s2, return 1
  // if s2 is lower in alphabetical order than s1, return -1
   // if s1 and s2 are equal, return 0
-  
+
   if (stringOne > stringTwo) {
     return 1;
 } else if (stringTwo > stringOne) {
@@ -255,7 +255,7 @@ function sortDescending(stringOne, stringTwo) {
 
     // YOUR CODE ABOVE HERE //
 }
-
+ 
 
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
 if((typeof process !== 'undefined') &&
