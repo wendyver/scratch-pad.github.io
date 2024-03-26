@@ -67,11 +67,11 @@ function toDashCase(string) {
        //convert string to dash-case
       //force string to lowercase
     let lowerCaseString = string.toLowerCase();
-     //create dashCaseString to hold a lowerCaseString that will be modified as follows:
-      // lowerCaseString is split at every space
-       // and then joined back together using dashes
-      let dashCaseString = lowerCaseString.split(" ").join("-");
-        //return new dashCaseString
+    console.log(lowerCaseString);
+      //replace empty space with a dash
+      let dashCaseString = lowerCaseString.replace(" ", "-");
+      console.log(dasCaseString)
+        //return new string
         return dashCaseString;
  // YOUR CODE ABOVE HERE //
 }
@@ -145,20 +145,73 @@ return lowerCaseLastLetter === lowerCaseChar;
 }
 
 /**
- * Given two input Strings, return the Strings concatenated into one.
+ * Given an input String and a single character, return true if the String
+ * begins with the character, false otherwise. The Function is case insensitive.
  *
- * TIP: What's the operator to concatenate two Strings?
+ * Example:
+ *
+ *      beginsWith('Max', 'm'); // => true;
+ *      beginsWith('Max', 'z'); // => false;
+ *
+ * TIP: How can you use Array access to your advantage here? How can you
+ *      ensure uppercase and lowercase can be compared equally?
  */
-function concat(stringOne, stringTwo) {
+function beginsWith(string, char) {
     // YOUR CODE BELOW HERE //
-// Given two input Strings, return the Strings concatenated into one.
-  // use the + operator (plus sign)
-   // create new variable to store concatenated strings
-  let concatenatedStrings = stringOne + stringTwo;
-    // return concatenatedStrings
-  return concatenatedStrings;
+/*
+I: a string and a character
+O: a boolean; true if the string starts with the char
+C: must be case insensitive
+E: when cases don't match
+*/
+//get the firstCharacter of the input strimg
+let firstCharacter = string[0];
+//convert that 1st char to lowercase
+let lowerFirstChar = firstCharacter.toLowerCase();
+//convert the input char to lowercase
+let lowerCaseChar = char.toLowerCase();
+//compare the lowerFirstChar of the string to the lowerCaseChar
+// if they're the same, return true
+//if they're not, return false
+if (lowerFirstChar === lowerCaseChar) {
+    return true;
+} else {
+    return false;
+}
+
     // YOUR CODE ABOVE HERE //
 }
+
+/**
+ * Given an input String and a single character, return true if the String
+ * ends with the character, false otherwise. The Function is case insensitive.
+ *
+ * Example:
+ *
+ *      endsWith('Max', 'X'); // => true;
+ *      endsWith('Max', 'z'); // => false;
+ *
+ * TIP: How can you use Array access to your advantage here? How can you
+ *      ensure uppercase and lowercase can be compared equally?
+ */
+function endsWith(string, char) {
+    // YOUR CODE BELOW HERE //
+
+// get last letter of string
+let lastLetterOfString = string[string.length-1];
+// change last letter of string to lowercase
+let lowerCaseLastLetter = lastLetterOfString.toLowerCase();
+// change char to lowercase
+let lowerCaseChar = char.toLowerCase();
+// compare last letter of string and char (both lowwwercase)
+return lowerCaseLastLetter === lowerCaseChar;
+// if same, return true
+// If different, return false
+
+
+    // YOUR CODE ABOVE HERE //
+}
+
 
 /**
  * Given any number of Strings, return all of them joined together.
@@ -224,38 +277,7 @@ function sortAscending(stringOne, stringTwo) {
 if (stringOne < stringTwo) {
     return 1;
 } else if (stringTwo < stringOne) {
-    return -1;
-} else if (stringOne === stringTwo) {
-    return 0;
-}
-    // YOUR CODE ABOVE HERE //
-}
 
-
-/**
- * Given two Strings, return 1 if the first is lower in alphabetical order than
- * the second, return -1 if the second is lower in alphabetical order than the
- * first, and return 0 if they're equal.
- *
- * TIP: How can we compare Strings? Is 'a' greater than or less than 'b'?
- */
-function sortDescending(stringOne, stringTwo) {
-    // YOUR CODE BELOW HERE //
-// if s1 is lower in alphabetical order than s2, return 1
- // if s2 is lower in alphabetical order than s1, return -1
-  // if s1 and s2 are equal, return 0
-
-  if (stringOne > stringTwo) {
-    return 1;
-} else if (stringTwo > stringOne) {
-    return -1;
-} else if (stringOne === stringTwo) {
-    return 0;
-}
-
-    // YOUR CODE ABOVE HERE //
-}
- 
 
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
 if((typeof process !== 'undefined') &&
