@@ -18,8 +18,7 @@ function printArrayValues(array) {
  C: use console.log
  E: loop forward
  */ 
-// create container for array values
-  let arrayValues  = "";
+
   //loop over the array and print each element
   for (let i = 0; i < array.length; i++) {
     console.log(array[i]);
@@ -35,7 +34,17 @@ function printArrayValues(array) {
  */
 function printArrayValuesInReverse(array) {
   // YOUR CODE BELOW HERE //
-  
+  /*
+ I: array
+ O: print out each value (in reverse order)
+ C: use console.log
+ E: loop backwards
+ */ 
+
+  //loop over the array and print each element
+  for (let i = array.length - 1; i >= 0; i--) {
+    console.log(array[i]);
+  }
   
   
   
