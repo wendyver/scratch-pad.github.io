@@ -12,8 +12,18 @@
  */
 function printArrayValues(array) {
   // YOUR CODE BELOW HERE //
-  
-  
+ /*
+ I: array
+ O: print out each value
+ C: use console.log
+ E: loop forward
+ */ 
+// create container for array values
+  let arrayValues  = "";
+  //loop over the array and print each element
+  for (let i = 0; i < array.length; i++) {
+    console.log(array[i]);
+  }
   
   
   // YOUR CODE ABOVE HERE //
