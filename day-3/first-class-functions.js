@@ -19,8 +19,19 @@ function createGreaterThanFilter(base) {
   C: return a function
   E: input could be string or number
   */ 
- 
-    
+// declare a function that tests whether a given value is greater than the base
+ let greaterThanFilter = function(value) {
+    // if the value is greater than the bas
+    if (value > base) {
+        // return true
+        return true;
+        // otherwise return false
+    } else {
+        return false;
+    }
+ }
+ // return the function greaterThanFilter
+  return greaterThanFilter;  
     // YOUR CODE ABOVE HERE //
 }
 
@@ -31,7 +42,25 @@ function createGreaterThanFilter(base) {
  */
 function createLessThanFilter(base) {
     // YOUR CODE BELOW HERE //
-    
+  /*
+  I: input base (could be string or number)
+  O: funtion that tests whether a given value is less than the base
+  C: return a function
+  E: input could be string or number
+  */ 
+// declare a function that tests whether a given value is less than the base
+let lessThanFilter = function(value) {
+    // if the value is less than the bas
+    if (value < base) {
+        // return true
+        return true;
+        // otherwise return false
+    } else {
+        return false;
+    }
+ }
+ // return the function lessThanFilter
+  return lessThanFilter;    
     
     
     
@@ -45,12 +74,24 @@ function createLessThanFilter(base) {
  */
 function createStartsWithFilter(startsWith) {
     // YOUR CODE BELOW HERE //
-    
-    
-    
-    
-    // YOUR CODE ABOVE HERE //
+    // declare functio  that takes a string as the parameter
+    let startsWithFunction = function(string) {
+        // create a variable to store lowercase startsWith
+    let lowerCaseStartsWith = startsWith.toLowerCase();
+    // create variable to store lowercase 1st letter of string
+    let lowerCaseStringStartsWith = string[0].toLowerCase();
+    // if they are the same
+   if (lowerCaseStartsWith === lowerCaseStringStartsWith) {
+    // return true
+    return true;
+   } else {
+    // return false
+    return false;
+   }
 }
+return startsWithFunction;
+    // YOUR CODE ABOVE HERE //
+    }
 
 /** 
  * Given a endsWith character, which will be a single character, return a 
@@ -59,7 +100,22 @@ function createStartsWithFilter(startsWith) {
  */
 function createEndsWithFilter(endsWith) {
     // YOUR CODE BELOW HERE //
-    
+   // declare functio  that takes a string as the parameter
+   let endsWithFunction = function(string) {
+    // create a variable to store lowercase endsWith
+let lowerCaseEndsWith = endsWith.toLowerCase();
+// create variable to store lowercase 1st letter of string
+let lowerCaseStringEndsWith = string[string.length - 1].toLowerCase();
+// if they are the same
+if (lowerCaseEndsWith === lowerCaseStringEndsWith) {
+// return true
+return true;
+} else {
+// return false
+return false;
+}
+}
+return endsWithFunction;  
     
     
     
