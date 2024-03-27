@@ -56,7 +56,19 @@ function printArrayValuesInReverse(array) {
  */
 function getObjectKeys(object) {
   // YOUR CODE BELOW HERE //
-  
+ // I: input object
+ // O: return an array
+ // C: array contains the keys of the input object
+ // E: ---
+ //create repository for thr objrct's keys
+ let objectKeys = [];
+//look though all of the keys in the object and
+ for (let key in object) {
+   // push them into objectKeys
+  objectKeys.push(key);
+ }
+ // return object keys
+ return objectKeys;
   
   
   
