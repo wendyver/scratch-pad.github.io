@@ -149,7 +149,12 @@ function modifyStrings(strings, modify) {
  */
 function allStringsPass(strings, test) {
     // YOUR CODE BELOW HERE //
-    
+ /*
+  I: an Array of Strings and a Function designed to test the String in some way
+  O: return a Boolean on whether it passed
+  C: return a function
+  E: input could be string or number
+  */    
     
     
     
