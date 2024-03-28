@@ -131,9 +131,20 @@ return endsWithFunction;
  */
 function modifyStrings(strings, modify) {
     // YOUR CODE BELOW HERE //
-    
-    
-    
+  /*
+  I: an Array of Strings and a Function designed to modify a String
+  O: return the Array of the Strings, modified
+  C: loop over the strings; pass each String to the modify Function
+  E: collect the results into some collection.
+ */     
+  // create collection variable to store collection results  
+    let collection = [];
+    for (let i = 0; i < strings.length; i++) {
+       let modifiedString = modify(strings[i]);
+        collection.push(modifiedString);
+    }
+
+    return collection;
     
     // YOUR CODE ABOVE HERE //
 }
