@@ -131,20 +131,9 @@ return endsWithFunction;
  */
 function modifyStrings(strings, modify) {
     // YOUR CODE BELOW HERE //
-  /*
-  I: an Array of Strings and a Function designed to modify a String
-  O: return the Array of the Strings, modified
-  C: loop over the strings; pass each String to the modify Function
-  E: collect the results into some collection.
- */     
-  // create collection variable to store collection results  
-    let collection = [];
-    for (let i = 0; i < strings.length; i++) {
-       let modifiedString = modify(strings[i]);
-        collection.push(modifiedString);
-    }
-
-    return collection;
+    
+    
+    
     
     // YOUR CODE ABOVE HERE //
 }
@@ -158,30 +147,11 @@ function modifyStrings(strings, modify) {
  * 
  * TIP: You need to loop over the Strings, right? And pass them to the test?
  */
- function allStringsPass(strings, test) {
+function allStringsPass(strings, test) {
     // YOUR CODE BELOW HERE //
- /*
-  I: an Array of Strings and a Function designed to test the String in some way
-  O: return a Boolean 
-  C: return true if ALL Strings pass the test
-  E: only return true if ALL strings pass the test
-  */    
- let booleanArray = [];
-  // loop over the strings in the array strings
-  for (let i = 0; i < strings.length; i++) {
-    // pass each string to the test
-   let booleanValue = test(strings[i]);
-   booleanArray.push(booleanValue);
-  }
-    // check if any boolean value in the array is false
-    for (let j = 0; j < booleanArray.length; j++) {
-        if (booleanArray[j] === false) {
-            return false; // if any string fails the test, return false
-        } 
-        }
-        // if all strings pass the test, return true
-        return true;
-
+    
+    
+    
     
     // YOUR CODE ABOVE HERE //
 }
