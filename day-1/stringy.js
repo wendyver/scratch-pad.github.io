@@ -5,7 +5,7 @@
 /**
  * IN CLASS EXERCISE: stringy.js
  */
-// hello
+
 /**
  * Given an input String, return its length.
  *
