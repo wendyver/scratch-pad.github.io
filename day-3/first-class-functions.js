@@ -152,8 +152,8 @@ function allStringsPass(strings, test) {
  /*
   I: an Array of Strings and a Function designed to test the String in some way
   O: return a Boolean on whether it passed
-  C: return a function
-  E: input could be string or number
+  C: return true if ALL Strings pass the test
+  E: only return true if ALL strings pass the test
   */    
     
     
