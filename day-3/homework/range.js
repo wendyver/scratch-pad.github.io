@@ -23,9 +23,27 @@
  */
 function range(start, end) {
     // YOUR CODE GOES BELOW HERE //
-    
-    
-    
+  /*
+  I: two integers
+  O: an Array containing all integers  between the two parameters, inclusively
+  C: collect output array; use a loop; use push
+  E: if the first argument is greater than the second, return the range in reverse order,
+  */  
+  // create container array
+    let containerArray = [];
+     // if start is smaller than end
+    if (start < end) {
+        // loop from start to end
+        for (let i = start; i <= end; i++) {
+            containerArray.push(i);
+        }
+        return containerArray;
+    } else if (start > end) {
+        for (let j = start; j >= end; j--) {
+            containerArray.push(j);
+        }
+        return containerArray;
+    }
     
     // YOUR CODE GOES ABOVE HERE //
 }
