@@ -77,7 +77,11 @@ function makeContactList() {
         printAllContactNames: function() {
             let allContactNames = "";
             for (let j = 0; j < contacts.length; j++) {
+                if (j <= (contacts.length - 2)) {
                 allContactNames += contacts[j]["nameFirst"] + ' ' + contacts[j]["nameLast"] + "\n";
+                } else  {
+                    allContactNames += contacts[j]["nameFirst"] + ' ' + contacts[j]["nameLast"];
+                }
             }
             return allContactNames;
         }
